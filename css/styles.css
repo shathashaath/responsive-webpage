@@ -1,49 +1,112 @@
 .container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
-body{
-  background-color: black;
+body {
+    background-color: black;
 }
-.header{
-  background-color: white;
-  color:black;
-  width:100%;
+.header {
+    background-color: white;
+    color: black;
+    width: 100%;
 }
-.navbar li{
-  display: inline-block;
-  list-style: none;
-  padding: 5px;
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 5px;
 }
 .navbar {
-  width: 100%;
-  background-color: lightgray;
-  color: black;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
 }
-.title{
-  color:white;
-  width: 100%;
+.address {
+    color: white;
+    width: 100%;
 }
-.city{
-  color:white;
-  width: 100%;
-}
-.features,.features-press,.text{
-  background-color: white;
-  color:black;
-  width: 100%;
+.features, .features-press, .description {
+    background-color: white;
+    color: black;
+    width: 100%;
 }
 img {
     max-width: 100%;
     height: auto;
 }
-.features{
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+.features {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
-.features-press,.text{
-  margin: 5px;
+.features-press, .description {
+    margin: 5px;
+}
+@media (min-width: 700px) {
+
+    img {
+        width: 100%;
+        height: 500px;
+    }
+    body{
+      background-color: white;
+    }
+    .header {
+        border: 1px;
+        position: absolute;
+        left: 50px;
+        top: 60px;
+        z-index: 2;
+        width: 200px;
+        height: 200px;
+        description-align: center;
+    }
+    .navbar li {
+        clear: both;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .address {
+        z-index: 2;
+        position: absolute;
+        left: 50px;
+        top: 400px;
+    }
+    .features {
+        visibility: hidden;
+    }
+    .features-press, .description {
+        width: 370px;
+        height: 200px;
+        background-color: #041900;
+        color: white;
+        float: left;
+        margin: 2;
+        padding: 10px;
+    }
+    .description {
+      background-color: #080808;
+    }
+    .font{
+      display: block;
+      font-size: 10px;
+      text-align: center;
+    }
+    .circle{
+      border-radius: 100px;
+      width:50px;
+      height: 50px;
+      margin: 10px auto;
+      border-style: solid;
+     display: table;
+     border-color: white;
+     margin-left: 0;
+    }
+    .circle p{
+      vertical-align: middle;
+      display: table-cell;
+      text-align: center;
+    }
 }
