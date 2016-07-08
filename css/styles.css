@@ -1,0 +1,49 @@
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+body{
+  background-color: black;
+}
+.header{
+  background-color: white;
+  color:black;
+  width:100%;
+}
+.navbar li{
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+}
+.navbar {
+  width: 100%;
+  background-color: lightgray;
+  color: black;
+}
+.title{
+  color:white;
+  width: 100%;
+}
+.city{
+  color:white;
+  width: 100%;
+}
+.features,.features-press,.text{
+  background-color: white;
+  color:black;
+  width: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.features{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.features-press,.text{
+  margin: 5px;
+}
